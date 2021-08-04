@@ -24,5 +24,5 @@ Press Ctrl + C to stop when the log of the wind that started listening is displa
 6. In slave from master use pg_basebackup to init data
 	docker-compose -f postgres-compose.yaml run --rm slave pg_basebackup -h master -D /var/lib/postgresql/data -R --progress -U repl_user
 
-7.Run slave service and pgadmin4 service
+7. Run slave service and pgadmin4 service
 	docker-compose -f postgres-compose.yaml up -d
